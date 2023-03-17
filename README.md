@@ -1,6 +1,7 @@
 # Injections
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.11.
+This is a training application created to remember the rules of using the Angular framework. It uses basic aspects such as loop constructs, switch construct bidirectional data flow, etc.
 
 ## Development server
 
