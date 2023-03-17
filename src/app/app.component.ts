@@ -25,4 +25,9 @@ export class AppComponent {
   {
     return this.list.items.filter(item => !item.complete).length;
   }
+
+  get items(): readonly InjectionItem[]
+  {
+    return this.list.items;
+  }
 }
