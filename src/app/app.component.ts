@@ -28,7 +28,7 @@ export class AppComponent {
 
   get items(): readonly InjectionItem[]
   {
-    return this.list.items.filter(item => !item.complete)
+    return this.list.items.filter(item => this.showComplete || !item.complete)
   }
 
   addItem(newItem: string)
@@ -38,4 +38,6 @@ export class AppComponent {
       this.list.addItem(newItem)
     }
   }
+
+  showComplete: boolean = false;
 }
