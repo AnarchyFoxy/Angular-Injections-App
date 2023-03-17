@@ -23,11 +23,11 @@ export class AppComponent {
 
   get itemCount(): number
   {
-    return this.list.items.filter(item => !item.complete).length;
+    return this.items.length;
   }
 
   get items(): readonly InjectionItem[]
   {
-    return this.list.items;
+    return this.list.items.filter(item => !item.complete)
   }
 }
