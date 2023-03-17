@@ -30,4 +30,12 @@ export class AppComponent {
   {
     return this.list.items.filter(item => !item.complete)
   }
+
+  addItem(newItem: string)
+  {
+    if (newItem != "")
+    {
+      this.list.addItem(newItem)
+    }
+  }
 }
